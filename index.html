@@ -53,10 +53,10 @@
           <div class="container">
             <h1 class="visually-hidden">Студия создания сайтов WebStudio</h1>
           <p class="hero-title">Эффективные решения<br> для вашего бизнеса</p>
-          <a class="button hero-button" href="">Заказать услугу</a>
+          <button class="button" data-modal-open>Заказать услугу</button>
           </div>
         </section>
-    <!-----------------------ADVSANTAGES-------------------------->
+    <!-----------------------ADVANTAGES-------------------------->
         <section class="section advant">
             <div class="container">
           <ul class="advant-list">
@@ -478,18 +478,17 @@
         </div>
       </footer>
 <!-------------------------BACKDROP----------------------------->
-<div class="backdrop">
-
+<div class="backdrop" data-modal>
+<div class="modal">
+  <button type="button" class="close-btn" data-modal-close><svg class="close">
+    <use href="./images/content/sprite.svg#close">
+    </use>
+</svg>
+  </button>
 </div>
-
-
+</div>
   </main>
- <!-- <script>
-  const { height: pageHeaderHeight } = document
-    .querySelector(".header")
-    .getBoundingClientRect();
+  <script src="./js/modal.js"></script>
 
-  document.body.style.paddingTop = `${pageHeaderHeight}px`;
-</script> -->
  </body>
 </html>
